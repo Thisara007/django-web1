@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Piece</title>
+</head>
+<body>
+    {% for item in collection.piece_set.all %}
+       
+    <div align="center">
+    <img src="{{item.piececover}}" height="200" width="200">
+    <h2>{{item.title}}-{{item.artist}}</h2>
+    <h3>{{item.year}}</h3>
+       
+    </br>
+</div>
+    {% endfor %}
+
+</body>
+</html>

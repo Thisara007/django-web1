@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>genere</title>
+</head>
+<body>
+    <h1>Html page</h1>
+    {% for item in object_list %}
+       
+    <div align="center">
+    <img src="{{item.collcover}}" height="200" width="200">
+    <h2><a href="/genere/{{item.pk}}">{{item.collection_name}}</a></h2>
+    <h3>{{item.description}}</h3>
+       
+    </br>
+</div>
+    {% endfor %}
+
+</body>
+</html>
